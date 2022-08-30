@@ -13,9 +13,10 @@ def get_random_string(length):
     return result_str
 
 br = webdriver.Chrome('/usr/bin/chromedriver')
+myurl = "website url"
 
 #br.execute_script("window.open('about:blank', 'firsttab');")
-br.get("https://nekoumoku.com/")
+br.get("myurl")
 sleep(4)
 br.find_element(By.ID,"wpdlc-button-icon").click()
 mssge = br.find_element(By.ID, "wpdlc-widget-app-chats-send-message-textarea")
